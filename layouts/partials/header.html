@@ -19,3 +19,7 @@
     {{- end }}
   </ul>
 </nav>
+
+{{- if .Site.Params.Bio -}}
+<p class="logo-bio">~ {{ .Site.Params.Bio }} ~</p>
+{{- end -}}
