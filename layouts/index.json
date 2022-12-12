@@ -1,0 +1,12 @@
+{
+    "items" : [
+    {{ range $i, $e := $.Site.RegularPages}}
+    {{ if $i }}, {{ end }}
+    {
+        "url" : "{{ .Permalink }}",
+        "title" : "{{ .Title }}",
+        "content": {{ .Content | plainify | jsonify }}
+    }
+    {{ end }}
+    ]
+}

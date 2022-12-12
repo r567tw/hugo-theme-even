@@ -50,7 +50,7 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
   url = "/categories/"
 
 [params]
-  bio="『It’s Your Life. Share it. Celebrate it. Build it. AND HAVE FUN!』"
+  # bio="『It’s Your Life. Share it. Celebrate it. Build it. AND HAVE FUN!』"
   version = "4.x"           # Used to give a friendly message when you have an incompatible update
   debug = false             # If true, load `eruda.min.js`. See https://github.com/liriliri/eruda
 
@@ -230,3 +230,5 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
 #  section = ["HTML", "RSS"]
 #  taxonomy = ["HTML", "RSS"]
 #  taxonomyTerm = ["HTML"]
+[outputs]
+    home = [ "HTML", "RSS", "JSON"]
