@@ -22,8 +22,6 @@
     {{ T "theme" }} -
     <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
   </span>
-  <span class="division">|</span>
-  <span>By r567tw</span>
 
   {{ if .Site.Params.busuanzi.enable -}}
   <div class="busuanzi-footer">
@@ -51,5 +49,7 @@
     <!--
     --><span>{{if .Site.Copyright }}{{ .Site.Copyright | safeHTML }}{{ else }}{{ .Site.Author.name | safeHTML }}{{ end
       }}</span>
+    <span class="division">|</span>
+    <span>By r567tw</span>
   </span>
 </div>
