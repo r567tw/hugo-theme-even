@@ -7,3 +7,18 @@
     text-align: left;
     font-style: italic;
 }
+
+.search {
+    color: $black;
+}
+
+.search-result {
+    margin-left: 0px;
+    padding-left: 10px;
+
+    a {
+        &:hover {
+            color: $theme-color;
+        }
+    }
+}

@@ -5,7 +5,7 @@
 // ========== Theme Color ========== //
 // Config here to change theme color
 // Default | Mint Green | Cobalt Blue | Hot Pink | Dark Violet
-$theme-color-config: 'Default';
+$theme-color-config: 'Mint Green';
 
 // Default theme color map
 $theme-color-map: (
@@ -21,6 +21,7 @@ $theme-color-map: (
 @if not(map-has-key($theme-color-map, $theme-color-config)) {
   $theme-color-config: 'Default';
 }
+
 $theme-color-list: map-get($theme-color-map, $theme-color-config);
 
 // Default theme color of the site.
@@ -31,7 +32,7 @@ $deputy-color: nth($theme-color-list, 2) !default;
 
 
 // ========== Color ========== //
-$black: #0a0a0a !default;
+$black: #202124 !default;
 $white: #fefefe !default;
 $light-gray: #e6e6e6 !default;
 $gray: #cacaca !default;
@@ -40,7 +41,8 @@ $dark-gray: #8a8a8a !default;
 
 // ========== Global ========== //
 // Text color of the body.
-$global-font-color: #34495e !default;
+// $global-font-color: #34495e !default;
+$global-font-color: $deputy-color !default;
 
 // Font size attribute applied to '<html>' and '<body>'.
 $global-font-size: 16px !default;
@@ -61,7 +63,7 @@ $global-font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif !def
 $global-serif-font-family: Athelas, STHeiti, Microsoft Yahei, serif !default;
 
 // Background color of the site.
-$global-background: $white !default;
+$global-background: $black !default;
 
 // Headings font size of the site.
 $global-headings: (
@@ -70,8 +72,7 @@ $global-headings: (
   h3: 20px,
   h4: 16px,
   h5: 14px,
-  h6: 14px
-) !default;
+  h6: 14px) !default;
 
 
 // ========== Header ========== //
@@ -81,15 +82,16 @@ $header-padding: 20px 20px !default;
 // Font family: Chancery
 @font-face {
   font-family: 'Chancery';
-  src: url('../fonts/chancery/apple-chancery-webfont.eot');
-  src: local('Apple Chancery'), url('../fonts/chancery/apple-chancery-webfont.eot?#iefix') format('embedded-opentype'),
+  src: url('../fonts/chancery/apple-chancery-webfont.eot'
+  );
+src: local('Apple Chancery'), url('../fonts/chancery/apple-chancery-webfont.eot?#iefix') format('embedded-opentype'),
   url('../fonts/chancery/apple-chancery-webfont.woff2') format('woff2'),
   url('../fonts/chancery/apple-chancery-webfont.woff') format('woff'),
   url('../fonts/chancery/apple-chancery-webfont.ttf') format('truetype'),
   url('../fonts/chancery/apple-chancery-webfont.svg#apple-chancery') format('svg');
-  font-weight: lighter;
-  font-style: normal;
-  font-display: swap;
+font-weight: lighter;
+font-style: normal;
+font-display: swap;
 }
 
 // Font size of the logo.
@@ -153,7 +155,7 @@ $post-nav-font-size: 18px !default;
 $post-toc-width: 200px !default;
 
 // Backgroud color of the post toc.
-$post-toc-backgroud: rgba($deputy-color, 0.6) !default;
+$post-toc-backgroud: rgba($theme-color, 0.3) !default;
 
 // Margin left of the post toc.
 $post-toc-margin-left: $global-body-width - 15px !default;
@@ -178,13 +180,13 @@ $content-headings-anchor: "" !default;
 $content-link-border: 1px solid $theme-color !default;
 
 // Background color of the blockquote.
-$content-blockquote-backgroud: rgba($theme-color, 0.05) !default;
+$content-blockquote-backgroud: $deputy-color !default;
 
 // Border left of the blockquote.
 $content-blockquote-border-left: 3px solid rgba($theme-color, 0.3) !default;
 
 // Border color of the table.
-$content-table-border-color: darken($deputy-color, 3%) !default;
+$content-table-border-color: darken($theme-color, 3%) !default;
 
 // ========== Code ========== //
 // Color of the code.
@@ -195,7 +197,7 @@ $code-font-size: 0.9em !default;
 
 // Font family of the code.
 $code-font-family: Consolas, Monaco, Menlo, "DejaVu Sans Mono",
- "Bitstream Vera Sans Mono", "Courier New", monospace !default;
+  "Bitstream Vera Sans Mono", "Courier New", monospace !default;
 
 // Color of code highlight, solarized.
 $code-highlight-color: (
@@ -206,8 +208,7 @@ $code-highlight-color: (
   attribute: #b58900,
   symbol: #cb4b16,
   built_in: #dc322f,
-  formula: #eee8d5
-) !default;
+  formula: #eee8d5) !default;
 
 // Code type list.
 $code-type-list: (
@@ -255,7 +256,7 @@ $code-type-list: (
   language-yaml: "YAML",
   language-toml: "TOML",
   language-diff: "Diff"
-) !default;
+  ) !default;
 
 // Color of the code background.
 $code-background: $deputy-color !default;
