@@ -7,6 +7,8 @@ tags: ["shortcodes"]
 categories: ["shortcodes"]
 
 ---
+# JimmySay
+{{% jimmysay saying="Change Company or Change Company" %}}
 
 # Admonition
 

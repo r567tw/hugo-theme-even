@@ -22,3 +22,14 @@
         }
     }
 }
+
+#jimmy-say {
+    color: $global-font-color;
+    background-color: rgba(#ff7526,0.3);
+    transition: 0.5s;
+    border-left: 0px;
+    &:hover {
+        box-shadow:0px 0px 60px rgba(0,0,0,0.4);
+        transform: translate(-5px,-5px);
+    }
+}
