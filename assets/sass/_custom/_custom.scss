@@ -25,42 +25,41 @@
 
 #jimmy-say {
     color: $global-font-color;
-    background-color: rgba(#ff7526,0.3);
+    background-color: rgba(#ff7526, 0.3);
     transition: 0.5s;
     border-left: 0px;
+
     &:hover {
-        box-shadow:0px 0px 60px rgba(0,0,0,0.4);
-        transform: translate(-5px,-5px);
+        box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.4);
+        transform: translate(-5px, -5px);
     }
 }
 
 .search {
     position: relative;
-    width: 80%;
-    float: left;
-    margin-right: 0px;
-    padding-right: 0px;
-  }
-
-  .search-bar {
     width: 100%;
-    height: 32px;
+    float: left;
+}
+
+.search-bar {
+    display: inline;
+    width: 80%;
+    height: 100%;
     font-size: 20px;
     border: 3px solid #3d1101;
     background-color: #efe9e7;
     margin-right: 0px;
     padding-right: 0px;
-  }
+}
 
-  .search-btn {
-    width: 36px;
+.search-btn {
+    display: inline;
+    width: 10%;
     height: 100%;
     background-color: #3d1101;
-    color: #efe9e7;
-    outline: none;
-    border: 2px solid #3d1101;
-    cursor: pointer;
-    position: absolute;
-    top: 0;
-    right: 0;
-  }
+    border: 3px solid #3d1101;
+}
+
+.search-result {
+    display: inline-block;
+}
