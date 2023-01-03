@@ -5,7 +5,7 @@
 // ========== Theme Color ========== //
 // Config here to change theme color
 // Default | Mint Green | Cobalt Blue | Hot Pink | Dark Violet
-$theme-color-config: 'Mint Green';
+$theme-color-config: 'Default';
 
 // Default theme color map
 $theme-color-map: (
@@ -32,7 +32,7 @@ $deputy-color: nth($theme-color-list, 2) !default;
 
 
 // ========== Color ========== //
-$black: #202124 !default;
+$black: #0a0a0a !default;
 $white: #fefefe !default;
 $light-gray: #e6e6e6 !default;
 $gray: #cacaca !default;
@@ -41,8 +41,7 @@ $dark-gray: #8a8a8a !default;
 
 // ========== Global ========== //
 // Text color of the body.
-// $global-font-color: #34495e !default;
-$global-font-color: $deputy-color !default;
+$global-font-color: #34495e !default;
 
 // Font size attribute applied to '<html>' and '<body>'.
 $global-font-size: 16px !default;
@@ -63,7 +62,7 @@ $global-font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif !def
 $global-serif-font-family: Athelas, STHeiti, Microsoft Yahei, serif !default;
 
 // Background color of the site.
-$global-background: $black !default;
+$global-background: $white !default;
 
 // Headings font size of the site.
 $global-headings: (
@@ -155,7 +154,7 @@ $post-nav-font-size: 18px !default;
 $post-toc-width: 200px !default;
 
 // Backgroud color of the post toc.
-$post-toc-backgroud: rgba($theme-color, 0.3) !default;
+$post-toc-backgroud: rgba($deputy-color, 0.6) !default;
 
 // Margin left of the post toc.
 $post-toc-margin-left: $global-body-width - 15px !default;
@@ -180,13 +179,13 @@ $content-headings-anchor: "" !default;
 $content-link-border: 1px solid $theme-color !default;
 
 // Background color of the blockquote.
-$content-blockquote-backgroud: $deputy-color !default;
+$content-blockquote-backgroud: rgba($theme-color, 0.05) !default;
 
 // Border left of the blockquote.
 $content-blockquote-border-left: 3px solid rgba($theme-color, 0.3) !default;
 
 // Border color of the table.
-$content-table-border-color: darken($theme-color, 3%) !default;
+$content-table-border-color: darken($deputy-color, 3%) !default;
 
 // ========== Code ========== //
 // Color of the code.
