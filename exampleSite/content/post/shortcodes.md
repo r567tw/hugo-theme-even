@@ -10,6 +10,10 @@ categories: ["shortcodes"]
 # JimmySay
 {{% jimmysay saying="Change Company or Change Company" %}}
 
+```markdown
+{{%/* jimmysay saying="Change Company or Change Company" */%}}
+```
+
 # Admonition
 
 {{% admonition note "I'm title!" false %}}
