@@ -48,6 +48,11 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
   weight = 40
   identifier = "categories"
   url = "/categories/"
+[[menu.main]]
+  name = "Search"
+  weight = 40
+  identifier = "categories"
+  url = "/search/"
 
 [params]
   # bio="『It’s Your Life. Share it. Celebrate it. Build it. AND HAVE FUN!』"
